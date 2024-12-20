@@ -3,9 +3,7 @@
 ## Description
 Welcome to my work collection  
 
-This git includes all projects relevant to my personal development that I can show at this moment. Therefore, some things will be outdated.  
-
-This git includes:  
+This branch includes:  
 * Divoom-Ditoo website: Take a look at some of my first websites in which I used a tiny bit of JavaScript.  
 
 ## Getting Started/contributing
