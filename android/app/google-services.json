@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741827791438",
+    "project_id": "markov-sm4",
+    "storage_bucket": "markov-sm4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741827791438:android:40c0856c7ba2dfa2f4911f",
+        "android_client_info": {
+          "package_name": "com.example.virtual_buddy_app_design"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBefmWbNpCbHrlVxSss_dvS5vtO7wJ7RrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
