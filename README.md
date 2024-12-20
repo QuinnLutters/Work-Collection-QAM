@@ -4,7 +4,7 @@
 Welcome to my work collection  
 
 This branch includes:  
-* Divoom-Ditoo website: Take a look at some of my first websites in which I used a tiny bit of JavaScript.  
+* Codenames game: Play a game of Codenames and see how I created the entire game using JavaScript (but keep the score yourself).  
 
 ## Getting Started/contributing
 To run the applications on your device and make changes, follow these steps:
