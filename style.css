@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-image: url(zaeem-nawaz-vLa7HzxvCl8-unsplash.jpg); 
+    min-height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*All css for the starting Menu*/
+.startMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 15px;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+.startMenu h1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    margin: 0;
+    margin-top: 25px;
+    color: white;
+    font-size: 2rem;
+}
+
+.startMenu button{
+    width: 30vw;
+    height: 10vh;
+    border-radius: 15px;
+    border: none;
+    margin: 15px;
+    font-size: 2rem;
+    color: white;
+    background-color: #1F1F1F;
+}
+
+.hide{
+    display: none;
+}
+
+/*All css for the game*/
+
+.game{
+    margin-top: 7vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    grid-auto-rows: minmax(160px, auto);
+    justify-items: center;
+}
+
+.game button{
+    height: 14vh;
+    width: 14vw;
+    background-color: antiquewhite;
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 1.6rem;
+}
+
+
+.game button .upside-down{
+    rotate: 180deg;
+    margin-right: 50px;
+}
+
+.game button .break{
+    width: 12vw;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    margin: 8px;
+}
+
+.game button .normal{
+    width: 11vw;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.topMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    z-index: 1; 
+}
+
+.topMenu button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+
+.game button.clicked{
+    background-image: url(Beige.jpg);
+    background-size: cover;
+}
+
+.game button.blue{
+    background-image: url(Blue.jpg);
+    background-size: cover;
+}
+
+.game button.red{
+    background-image: url(Red.jpg);
+    background-size: cover;
+}
+
+.game button.black{
+    background-image: url(Black.jpg);
+    background-size: cover;
+}
