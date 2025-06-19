@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divoom Ditoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="NavLeft">
+                <li><a href="#">DIVOOM</a></li>
+            </ul>
+            <ul class="NavRight">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Shipping</a></li>
+            </ul>
+        </nav>
+        <section class="divoom">
+            <img src="Group 1 (1).svg">
+            <h1>DIVOOM DITOO PRO PIXEL</h1>
+        </section>
+        
+    </main>
+    <div class="gradient"></div>
+    <section class="PShare">
+        <ul id= "Bold">
+            <li>Share</li>
+            <li class="regular">Cool Music</li>
+        </ul>
+        <ul class="features">
+            <li class="RecLeft box"></li>
+            <li class="RecCenter box"></li>
+            <li class="RecRight box"></li>
+        </ul>
+    </section>
+    <section class="PPlay">
+        <ul id="Bold">
+            <li>Play</li>
+            <li class="regular">Cool Games</li>
+        </ul>
+        <ul class="images">
+
+        </ul>
+    </section>
+    <footer>
+        <ul class="categories">
+            <ul class="contact"><a href="#">Contact</a>
+                <li><a href="#">Our Socials</a></li>
+                <li><a href="#">Email Form</a></li>
+                <li><a href="#">Adress</a></li>
+                <li><a href="#">Invoices</a></li>
+            </ul>
+            <ul class="about"><a href="#">About</a>
+                <li><a href="#">Our Goals</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">sustainability</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul class="policy"><a href="#">Policy</a>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Service Policy</a></li>
+            </ul>
+        </ul>
+        <div class="break"></div>
+    </footer>
+    <script>
+
+        const boxes = document.querySelectorAll('.box');
+
+        window.addEventListener('scroll',PHeightCheck);
+        PHeightCheck();
+
+        function PHeightCheck(){
+            const TriggerHeight = window.innerHeight / 5 * 4;
+            
+            boxes.forEach(box => {
+                const boxtop =box.getBoundingClientRect().top;
+
+                if (boxtop < TriggerHeight) {
+                    box.classList.add('show');
+                }
+                else{
+                    box.classList.remove('show');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Istok-regular;
+    src: url(Istok_Web/IstokWeb-Regular.ttf);
+}
+@font-face {
+    font-family: Istok-bold;
+    src: url(Istok_Web/IstokWeb-Bold.ttf);
+}
+@font-face {
+    font-family: Istok-italic;
+    src: url(Istok_Web/IstokWeb-Italic.ttf);
+}
+@font-face {
+    font-family: Istok-bold-italic;
+    src: url(Istok_Web/IstokWeb-BoldItalic.ttf);
+}
+:root{
+    --color-dark: #1c1c1c;
+    --primary-color: #f2fafa;
+    --color-light: #ffffff;
+    --orange-accent: #F57656;
+    --blue-accent: #D1FFFF;
+    --primary-font: Istok-regular;
+    --primary-font-bold: Istok-bold;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: var(--color-dark);
+    margin: 0;
+}
+
+main{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 96vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-top-left-radius: 10pt;
+    border-top-right-radius: 10pt;
+}
+
+main nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+
+main nav a{
+    color: #1c1c1c;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+main nav ul.NavLeft{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: var(--color-light);
+    border-radius: 100pt;
+    border-bottom: solid var(--blue-accent);
+    border-right: solid var(--blue-accent);
+    margin-top: 1vh;
+}
+main nav ul.NavRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    width: 35vw;
+    margin: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: var(--color-light);
+    border-radius: 100pt;
+    border-bottom: solid var(--blue-accent);
+    border-right: solid var(--blue-accent);
+    margin-top: 1vh;
+}
+
+.divoom{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.divoom img{
+    min-height: 80vh;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.divoom h1{
+    padding: 0;
+    z-index: 1;
+    margin-top: 0;
+    position: absolute;
+    font-family: var(--primary-font-bold);
+    color: #F57656;
+    font-size: 15rem;
+    text-wrap: nowrap;
+    animation-name: leftright;
+    animation-iteration-count: infinite;
+    animation-duration: 5.5s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    
+}
+
+.gradient{
+    background-image: linear-gradient( var(--primary-color), var(--color-dark));
+    width: 96vw;
+    height: 50vh;
+    margin-left: 2vw;
+}
+
+#Bold{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font-bold);
+}
+
+ul .regular{
+    font-family: var(--primary-font);
+    font-weight: 100;
+}
+/*=============================DISPLAY BOX 1=====================*/
+.PShare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+}
+.PShare ul, .PPlay ul{
+    padding: 0;
+}
+
+.PShare .features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90vw;
+}
+
+.PShare .features li{
+    margin-top: 5vh;
+    width: 22vw;
+    height: 55vh;
+    border-radius: 10pt;
+    background-color: #f2fafa;
+} 
+
+
+.PShare .features .RecLeft {
+    background-image: linear-gradient(-150deg, #D1FFFF, #f57656);
+    margin-bottom: 3vh;
+    position: relative;
+    transform: translateX(-400%);
+    transition: transform 0.5s ease-out;    
+}
+
+.PShare .features .RecCenter{
+    background-image: linear-gradient(#D1FFFF, #f57656);
+    height: 65vh;
+    position: relative;
+}
+
+.PShare .features .RecRight{
+    background-image: linear-gradient(150deg, #D1FFFF, #f57656);
+    margin-bottom: 3vh;
+    position: relative;
+    transform: translateX(400%);
+    transition: transform 0.5s ease-out;
+}
+/*---------------ANIMATIONS ON SCROLL-------------*/
+.PShare .features .show{
+    transform: translateX(0);
+}
+
+/*=============================DISPLAY BOX 2=====================*/
+.PPlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.PPlay .images{
+    margin-top: 5vh;
+    background-image: url(blurry-gradient-haikei\ \(1\).svg);
+    width: 70vw;
+    height: 70vh;
+    background-size: cover;
+    border-radius: 10pt;
+    display: flex;
+    padding: 0;
+}
+
+/*=============================FOOTER=====================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    height: 40vh;
+    border-top-left-radius: 10pt;
+    border-top-right-radius: 10pt;
+    margin-top: 10vh;
+}
+
+footer a{
+    font-family:  var(--primary-font-bold);
+    color: var(--color-dark);
+    font-size: 1.2rem;
+}
+
+footer .categories{
+    padding: 0;
+    display: flex;
+    width: 76vw;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    margin-top: 5vh;
+}
+footer ul{
+    padding: 0;
+}
+footer .categories ul li{
+    margin-top: 3vh;
+}
+
+footer .categories ul li a{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+footer .break{
+    width: 80vw;
+    height: 3px;
+    background-color: var(--color-dark);
+    border-radius: 10pt;
+}
+
+
+/*=============================ANIMATIONS=====================*/
+
+@keyframes leftright{
+    0%{ left: 100%; }
+    100%{ left:-220%; }
+}
+
